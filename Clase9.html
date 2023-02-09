@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        :root{
+            --Very-ligth-pink: #C7C7C7;
+            --Text-input-field: #F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Black: #000000;
+            --Dark: #232830;
+            --sm: 0.875rem;
+            --md: 1rem;
+            --lg: 1.125rem;
+        }
+        
+        .my-order{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .title{
+            font-size: var(--lg);
+            margin-bottom:40px;
+        }
+        .my-order-container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+        .my-order-content{
+            display: flex;
+            flex-direction: column;
+        }
+        
+
+        .shopping-card figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover; 
+        }
+
+        .shopping-card p:nth-child(2){
+            color: var(--Very-ligth-pink);
+        }
+        .shopping-card p:nth-child(3){
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+
+        .shopping-card{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 24px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        .shopping-card figure{
+            margin: 0;
+        }
+        .order{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap:16px;
+            background-color: var(--Text-input-field);
+            border-radius: 8px;
+            margin-bottom: 24px;
+            padding: 0 24px;
+        }
+        .order p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order p span:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .order p span:nth-child(2){
+            font-size: var(--md);
+            color: var(--Very-ligth-pink);
+        }
+
+        .order p:nth-child(2){
+            text-align: end;
+            font-weight: bold;
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>06.02.2023</span>
+                        <span>2 articles </span>
+                    </p>
+                    <p>$540</p>
+
+                </div>
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+                </div>
+     
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1616566/pexels-photo-1616566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+                </div>
+    
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+                </div>
+    
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/8926961/pexels-photo-8926961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+                </div>
+    
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+                </div>
+    
+                <div class="shopping-card">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/10404450/pexels-photo-10404450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bicicleta de ruta">
+                    </figure>
+                    <p>Bicicleta de ruta</p>
+                    <p>$120</p>
+            </div>
+            </div>
+            
+
+        </div>
+
+    </div>  
+</body>
+</html>
