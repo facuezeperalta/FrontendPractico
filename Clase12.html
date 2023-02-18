@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Product Detail</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        :root{
+            --Very-ligth-pink: #C7C7C7;
+            --Text-input-field: #F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Black: #000000;
+            --Dark: #232830;
+            --sm: 0.875rem;
+            --md: 1rem;
+            --lg: 1.125rem;
+        }
+        .primary-button{
+            background-color: var(--Hospital-green);
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            height: 60px;
+            width: 100%;
+            color: var(--White);
+            font-weight: bold;
+            font-size: var(--lg);
+        }
+        .primary-button:hover{
+            background-color: var(--Text-input-field);
+            color: var(--Hospital-green);
+        }
+        .add-to-cart-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail-close{
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            top: 12px;
+            left: 12px;
+            background: var(--Text-input-field);
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+
+        }
+        .product-detail-close:hover{
+            cursor: pointer;
+        }
+
+        .product-detail-close > img:nth-child(1){
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            
+        }
+        .product-detail > img:nth-child(2){
+            width: 360px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }   
+        .product-info{
+            margin: 24px 24px 0 24px;
+        }
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--lg);
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+
+        .product-info p:nth-child(2){
+            font-size: var(--md);
+            color: var(--Very-ligth-pink);
+            margin-top: 4px;
+            margin-bottom: 12px;
+        }
+        .product-info p:nth-child(3){
+            font-size: var(--md);
+            color: var(--Very-ligth-pink)
+            
+        }
+
+        @media (max-width: 640px) {
+            .product-detail{
+                width: 100%;
+            }
+            .primary-button{
+                margin-top: 210px;
+                height: 65px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./icons/icon_close.png" alt="Close">
+        </div>
+       
+        <img src="https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/981-000882_800.jpg" alt="Auricular inalámbrico Logitech G733">
+
+        <div class="product-info">
+            <p>$110</p>
+            <p>Auricular Logitech G733 Wireless white</p>
+            <p>Audífonos inalámbricos con micrófono para juegos diseñados para desempeño y confort. Equipados con todo el sonido envolvente, los filtros de voz y la iluminación avanzada que necesitas para lucir, sonar y jugar con más estilo que nunca.</p>
+        </div>
+
+        <button class="primary-button add-to-cart-button">
+            <img src="./icons/bt_add_to_cart.svg" alt="Add to cart">
+            Add to cart
+        </button>
+    </aside>
+
+
+
+</body>
+</html>
